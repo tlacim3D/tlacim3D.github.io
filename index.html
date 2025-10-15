@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomas3D | 3D tlač na zákazku</title>
   <style>
-    body { margin:0; font-family:sans-serif; background:#0d0d0d; color:#f4f4f4; }
-    header { background:#1a1a1a; padding:1rem; text-align:center; }
-    h1 { color:#ff6600; }
-    section { padding:2rem; max-width:800px; margin:auto; }
-    a { color:#ff6600; text-decoration:none; }
-    img { max-width:100%; margin:0.5rem 0; border-radius:10px; }
+    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#0d0d0d; color:#f4f4f4; }
+    header { background:#1a1a1a; padding:2rem; text-align:center; }
+    h1 { font-size:3rem; color:#ff6600; margin:0; }
+    h2 { color:#ff6600; }
+    section { padding:2rem; max-width:1000px; margin:auto; }
+    .hero { display:flex; flex-direction:column; align-items:center; justify-content:center; }
+    .hero img { width:300px; max-width:90%; border-radius:10px; margin-top:1rem; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
+    .gallery img { width:100%; border-radius:10px; transition: transform 0.3s; cursor:pointer; }
+    .gallery img:hover { transform: scale(1.05); }
+    a.button { background:#ff6600; color:#0d0d0d; padding:0.8rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:1rem; transition: 0.3s; }
+    a.button:hover { background:#ff8533; }
+    footer { background:#1a1a1a; text-align:center; padding:1rem; margin-top:2rem; }
   </style>
 </head>
 <body>
-  <header><h1>Tomas3D</h1></header>
+  <header class="hero">
+    <h1>Tomas3D</h1>
+    <p>Tlačím 3D produkty na zákazku</p>
+    <img src="p1p.jpg" alt="Bambu Lab P1P">
+  </header>
   <section>
     <h2>O mne</h2>
     <p>Tlačím na zákazku, modelujem a vyrábam funkčné aj dekoratívne 3D produkty. Používam Bambu Lab P1P a A1 Mini Combo.</p>
+  </section>
+  <section>
     <h2>Moja tvorba</h2>
-    <img src="p1p.jpg" alt="Bambu Lab P1P"/>
-    <img src="a1mini.jpg" alt="A1 Mini Combo"/>
+    <div class="gallery">
+      <img src="p1p.jpg" alt="Bambu Lab P1P">
+      <img src="a1mini.jpg" alt="A1 Mini Combo">
+      <img src="p1p.jpg" alt="Ukážka 3D tlače">
+      <img src="a1mini.jpg" alt="Ukážka 3D tlače">
+    </div>
+  </section>
+  <section>
     <h2>Zákazková tlač</h2>
     <p>Pošlite STL súbor alebo popis projektu a dostanete cenovú ponuku.</p>
-    <h2>Kontakt</h2>
-    <p>Email: <a href="mailto:info@tomas3d.sk">info@tomas3d.sk</a></p>
+    <a href="mailto:info@tomas3d.sk" class="button">Kontaktujte ma</a>
   </section>
+  <footer>
+    &copy; 2025 Tomas3D
+  </footer>
 </body>
 </html>
