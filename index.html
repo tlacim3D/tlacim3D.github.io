@@ -5,41 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomas3D | 3D tlač na zákazku</title>
   <style>
-    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#0d0d0d; color:#f4f4f4; }
-    header { background:#1a1a1a; padding:2rem; text-align:center; }
-    h1 { font-size:3rem; color:#ff6600; margin:0; }
-    h2 { color:#ff6600; }
-    section { padding:2rem; max-width:1000px; margin:auto; }
-    .hero { display:flex; flex-direction:column; align-items:center; justify-content:center; }
-    .hero img { width:300px; max-width:90%; border-radius:10px; margin-top:1rem; }
-    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; }
-    .gallery img { width:100%; border-radius:10px; transition: transform 0.3s; cursor:pointer; }
-    .gallery img:hover { transform: scale(1.05); }
-    a.button { background:#ff6600; color:#0d0d0d; padding:0.8rem 1.2rem; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:1rem; transition: 0.3s; }
-    a.button:hover { background:#ff8533; }
-    footer { background:#1a1a1a; text-align:center; padding:1rem; margin-top:2rem; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f4f4f4;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    h1 {
+      font-size: 3.5rem;
+      color: #ff6600;
+      margin-bottom: 0.5rem;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .hero img {
+      width: 400px;
+      max-width: 90%;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(255, 102, 0, 0.4);
+      margin-top: 2rem;
+      transition: transform 0.4s;
+    }
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+    h2 {
+      color: #ff6600;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(255, 102, 0, 0.2);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    a.button {
+      background: #ff6600;
+      color: #0d0d0d;
+      padding: 0.8rem 1.4rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1.5rem;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #ff8533;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      color: #999;
+    }
   </style>
 </head>
 <body>
   <header class="hero">
     <h1>Tomas3D</h1>
-    <p>Tlačím 3D produkty na zákazku</p> 
+    <p class="subtitle">Tlačím 3D produkty na zákazku</p>
+    <img src="bambu_p1s.jpg" alt="Bambu Lab P1S">
   </header>
+
   <section>
     <h2>O mne</h2>
-    <p>Tlačím na zákazku, modelujem a vyrábam funkčné aj dekoratívne 3D produkty. Používam Bambu Lab P1 a A1 .</p>
+    <p style="text-align:center;">
+      Tlačím na zákazku, modelujem a vyrábam funkčné aj dekoratívne 3D produkty. 
+      Používam kvalitné tlačiarne Bambu Lab P1S a A1 Mini Combo, vďaka čomu dosahujem 
+      vysokú presnosť a profesionálne výsledky.
+    </p>
   </section>
-  <section>
 
-   </div>
+  <section>
+    <h2>Moja tvorba</h2>
+    <div class="gallery">
+      <img src="print1.jpg" alt="3D tlač projekt 1">
+      <img src="print2.jpg" alt="3D tlač projekt 2">
+      <img src="print3.jpg" alt="3D tlač projekt 3">
+      <img src="print4.jpg" alt="3D tlač projekt 4">
+    </div>
   </section>
+
   <section>
     <h2>Zákazková tlač</h2>
-    <p>Pošlite STL súbor alebo popis projektu a dostanete cenovú ponuku.</p>
-    <a href="mailto:3_d_tlac@centrum.sk" class="button">Kontaktujte ma</a>
+    <p style="text-align:center;">
+      Pošlite mi STL súbor alebo popis projektu a ja vám pripravím cenovú ponuku.
+    </p>
+    <div style="text-align:center;">
+      <a href="mailto:info@tomas3d.sk" class="button">Kontaktujte ma</a>
+    </div>
   </section>
+
   <footer>
-    &copy; 2025 Tomas3D
+    &copy; 2025 Tomas3D | 3D tlač na zákazku
   </footer>
 </body>
 </html>
